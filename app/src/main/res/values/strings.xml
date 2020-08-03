@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MealMate</string>
+    <string name="ingredient_add">Add Ingredient</string>
+    <string name="tag_add">Add Tag</string>
+</resources>

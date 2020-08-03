@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "33336612817",
+    "firebase_url": "https://mealmate-bc2fe.firebaseio.com",
+    "project_id": "mealmate-bc2fe",
+    "storage_bucket": "mealmate-bc2fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:33336612817:android:a87582974fd4d2ff7df2f0",
+        "android_client_info": {
+          "package_name": "com.example.mealmate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "33336612817-lqktd7q5vacdtddri2opuj2rh6r5cvu5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mealmate",
+            "certificate_hash": "53c18573c62172e2e06aebc1180751ab538ad871"
+          }
+        },
+        {
+          "client_id": "33336612817-fupc33nngv8k1p6p4fpeck63vmraehci.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXeacrY1VRX9b85UbgVFI-kF0yipJRtiY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "33336612817-fupc33nngv8k1p6p4fpeck63vmraehci.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
