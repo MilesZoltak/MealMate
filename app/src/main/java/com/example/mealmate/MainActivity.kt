@@ -20,15 +20,17 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.firestore.FirebaseFirestore
 import io.github.yavski.fabspeeddial.SimpleMenuListenerAdapter
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlin.reflect.typeOf
 
 private const val TAG = "MainActivity"
 private val ingredients = mutableListOf<Specification>()
 private val tags = mutableListOf<Specification>()
+
 private val trie_ingredients_include = Trie_AC()
 private val trie_ingredients_exclude = Trie_AC()
 private val trie_tags_include = Trie_AC()
 private val trie_tags_exclude = Trie_AC()
+
+private val recipes = mutableListOf<Recipe>()
 class MainActivity : AppCompatActivity() {
 
     private lateinit var colorDrawableBackGround: ColorDrawable
@@ -68,10 +70,10 @@ class MainActivity : AppCompatActivity() {
             .show()
         dialog.findViewById<EditText>(R.id.etSearch)?.hint = "Enter $specType"
 
-        //set up recyclerview
+        //set up specifications recyclerview
         val rvSpecs = dialog.findViewById<RecyclerView>(R.id.rvSpecs)
-        val adapter = if (specType == "ingredients") SpecsAdapter(this, ingredients) else SpecsAdapter(this, tags)
-        rvSpecs?.adapter = adapter
+        val specAdapter = if (specType == "ingredients") SpecsAdapter(this, ingredients) else SpecsAdapter(this, tags)
+        rvSpecs?.adapter = specAdapter
         rvSpecs?.layoutManager = LinearLayoutManager(this)
 
         //handle user input
@@ -79,12 +81,12 @@ class MainActivity : AppCompatActivity() {
             val spec = dialog.findViewById<EditText>(R.id.etSearch)?.text.toString()
             if (specType == "ingredients") {
                 ingredients.add(Specification(spec, true))
-                adapter.notifyItemInserted(ingredients.size - 1)
+                specAdapter.notifyItemInserted(ingredients.size - 1)
 //                trie_ingredients_include.insert(spec)
                 Log.i(TAG, "including $spec in ingredients list and trie")
             } else {
                 tags.add(Specification(spec, true))
-                adapter.notifyItemInserted(tags.size - 1)
+                specAdapter.notifyItemInserted(tags.size - 1)
                 trie_tags_include.insert(spec)
                 Log.i(TAG, "including $spec in tags list and trie")
             }
@@ -101,12 +103,13 @@ class MainActivity : AppCompatActivity() {
             val spec = dialog.findViewById<EditText>(R.id.etSearch)?.text.toString()
             if (specType == "ingredients") {
                 ingredients.add(Specification(spec, false))
-                adapter.notifyItemInserted(ingredients.size - 1)
+
+                specAdapter.notifyItemInserted(ingredients.size - 1)
                 trie_ingredients_exclude.insert(spec)
                 Log.i(TAG, "excluded $spec from ingredients")
             } else {
                 tags.add(Specification(spec, false))
-                adapter.notifyItemInserted(tags.size - 1)
+                specAdapter.notifyItemInserted(tags.size - 1)
                 trie_tags_exclude.insert(spec)
                 Log.i(TAG, "excluded $spec from tags")
             }
@@ -128,7 +131,7 @@ class MainActivity : AppCompatActivity() {
             trie_tags_include.buildAhoCorasick()
             trie_tags_exclude.buildAhoCorasick()
 
-            searchRecipes(ingredients, tags)
+            searchRecipes()
             dialog.dismiss()
         }
         dialog.getButton(DialogInterface.BUTTON_NEUTRAL).setOnClickListener {
@@ -157,7 +160,7 @@ class MainActivity : AppCompatActivity() {
                     val spec2Delete = tags[viewHolder.adapterPosition]
                     tags.removeAt(viewHolder.adapterPosition)
                 }
-                adapter.notifyItemRemoved(viewHolder.adapterPosition)
+                specAdapter.notifyItemRemoved(viewHolder.adapterPosition)
             }
 
             override fun onChildDraw(
@@ -233,22 +236,40 @@ class MainActivity : AppCompatActivity() {
         itemTouchHelper.attachToRecyclerView(rvSpecs)
     }
 
-    private fun searchRecipes(ingredients: MutableList<Specification>, tags: MutableList<Specification>) {
+    private fun searchRecipes() {
+
         val db = FirebaseFirestore.getInstance()
 
         db.collection("recipes")
             .get()
             .addOnSuccessListener { documents ->
+                Log.i(TAG, "adding recipes")
                 for (document in documents) {
                     val haystack = document["ingredients"].toString().decapitalize()
-                    val results = trie_ingredients_include.searchAC(haystack)
-                    if (results.isNotEmpty()) {
-                        Log.i(TAG, "${document["name"]} includes $results")
+                    if (trie_ingredients_include.searchAC(haystack).isNotEmpty()) {
+                        recipes.add(Recipe(
+                            document["name"] as String,
+                            document["servings"] as String,
+                            document["ingredients"] as List<String>,
+                            document["directions"] as List<String>,
+                            document["tags"] as List<String>,
+                            document["source"] as String,
+                            document["image"] as String,
+                            document["url"] as String
+                        ))
+                        Log.i(TAG, "adding ${document["name"]}")
                     }
                 }
+                //set up recipe recyclerview
+                val rvRecipes = findViewById<RecyclerView>(R.id.rvRecipes)
+                val recipeAdapter = RecipeAdapter(this, recipes)
+                rvRecipes?.adapter = recipeAdapter
+                rvRecipes.layoutManager = LinearLayoutManager(this)
             }
             .addOnFailureListener { exception ->
                 Log.e(TAG, "Error getting documents: ", exception)
             }
+
+
     }
 }

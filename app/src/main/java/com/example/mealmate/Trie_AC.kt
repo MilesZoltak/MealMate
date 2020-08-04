@@ -2,14 +2,14 @@ package com.example.mealmate
 
 import android.util.Log
 
-private val TAG = "Trie_AC"
+private const val TAG = "Trie_AC"
 class Trie_AC {
     data class Node(var end: Boolean = false, var word: String = "", val childNodes: MutableMap<Char, Node> = mutableMapOf(), var fLink: Node? = null, var oLink: Node? = null)
 
     private val root = Node()
 
     fun insert(word: String) {
-        val lWord = word.decapitalize()     //i want this to be case insensitive, so we'll always deal with lower case
+        val lWord = word.decapitalize()
         var currentNode = root
         var depth = 0
         for (char in lWord) {
@@ -18,10 +18,10 @@ class Trie_AC {
             }
             currentNode = currentNode.childNodes[char]!!
             depth++
-            currentNode.word = word.subSequence(0, depth).toString()
+            currentNode.word = lWord.subSequence(0, depth).toString()
 
         }
-        currentNode.word = word
+        currentNode.word = lWord
         currentNode.end = true
     }
 
