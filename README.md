@@ -25,7 +25,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 # Things I still have to do (not exhaustive, I'm SURE other stuff will come up):
 ## For the actual app
-* [x]Add recursive deletion function to Aho-Corasick Trie when user swipes to delete (and rebuild after deletion but that's easy)
+* [x] Add recursive deletion function to Aho-Corasick Trie when user swipes to delete (and rebuild after deletion but that's easy)
 * Build in current ingredient seleciton functionality for tags (i only have it for ingredients right now)
   * Also build in the exclusion feature which is not implemented yet on either ingredients OR tags
 * fix the dialog recyclerview so that items appear centered and longer words don't get linefed
