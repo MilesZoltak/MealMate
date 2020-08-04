@@ -15,7 +15,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Things I have learned so far
 * Firebase and Cloud Firestore specifically, I'll have to figure out user authentification later but that shouldn't be crazy hard
-* Implementing Aho-Corasick Tries, this was quite the trip and I'm still in it but I think I've got the hang of it now
+* Implementing Aho-Corasick Tries, this was quite the trip ~~and I'm still in it but I think I've got the hang of it now~~ I DID IT!
 * Writing Python scripts to do webscraping, and then saving those results into JSON files
 * Adapting code in languages I'm less familiar with (like Node.js) to write console-based scripts for uploading files to Cloud Firestore
 * Using open-source GithHub repos in my own projects
