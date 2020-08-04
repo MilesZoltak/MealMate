@@ -23,4 +23,4 @@ things I have encountered and tried to learn more about.
 * Also build in the exclusion feature which is not implemented yet on either ingredients OR tags
 * fix the dialog recyclerview so that items appear centered and longer words don't get linefed
 * when main RV is empty put something there so it doesn't look like a barren wasteland
-** also put in some sort of loading message showing that the asynchronous task is working but not completed
+  * also put in some sort of loading message showing that the asynchronous task is working but not completed
