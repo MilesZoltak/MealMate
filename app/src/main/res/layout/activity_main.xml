@@ -11,6 +11,12 @@
         android:layout_height="match_parent"
         android:padding="16dp">
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvRecipes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:itemCount="10" />
+
         <io.github.yavski.fabspeeddial.FabSpeedDial
             android:id="@+id/fabSD"
             android:layout_width="wrap_content"
@@ -20,11 +26,9 @@
             app:fabMenu="@menu/menu_fab"
             app:miniFabBackgroundTint="@android:color/white"
             app:miniFabDrawableTint="?attr/colorPrimaryDark"
-            app:miniFabTitleTextColor="?attr/colorPrimaryDark" />
+            app:miniFabTitleTextColor="?attr/colorPrimaryDark" >
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+        </io.github.yavski.fabspeeddial.FabSpeedDial>
 
     </FrameLayout>
 

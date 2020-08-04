@@ -2,6 +2,7 @@ package com.example.mealmate
 
 import android.content.Context
 import android.graphics.Paint
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,6 +10,7 @@ import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.item_add.view.*
 
+private const val TAG = "SpecsAdapter"
 class SpecsAdapter(val context: Context, val specs: List<Specification>) :
 RecyclerView.Adapter<SpecsAdapter.ViewHolder>(){
 
@@ -25,6 +27,7 @@ RecyclerView.Adapter<SpecsAdapter.ViewHolder>(){
 
     inner class ViewHolder(itemView: View) :RecyclerView.ViewHolder(itemView) {
         fun bind(spec: Specification) {
+            Log.i(TAG, "binding ${spec.name}")
             itemView.tvSpec.text = "    ${spec.name}    "
             if (!spec.included) {
                 itemView.tvSpec.apply {
