@@ -26,14 +26,14 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 # Things I still have to do (not exhaustive, I'm SURE other stuff will come up):
 ## For the actual app
 * [ ] Add recursive deletion function to Aho-Corasick Trie when user swipes to delete (and rebuild after deletion but that's easy)
-* Build in current ingredient seleciton functionality for tags (i only have it for ingredients right now)
-  * Also build in the exclusion feature which is not implemented yet on either ingredients OR tags
-* fix the dialog recyclerview so that items appear centered and longer words don't get linefed
-* when main RV is empty put something there so it doesn't look like a barren wasteland
-  * also put in some sort of loading message showing that the asynchronous task is working but not completed
+* [ ] Build in current ingredient seleciton functionality for tags (i only have it for ingredients right now)
+  * [ ] Also build in the exclusion feature which is not implemented yet on either ingredients OR tags
+* [ ] fix the dialog recyclerview so that items appear centered and longer words don't get linefed
+* [ ] when main RV is empty put something there so it doesn't look like a barren wasteland
+  * [ ] also put in some sort of loading message showing that the asynchronous task is working but not completed
 ## For the database
-* I need to comb over the recipes currently in the database and add in tags for "keto-friendly" or whatever else
- * recipes usually say "keto" or "paleo" etc. in the title but if I didn't grab it from a collection of keto/paleo/etc recipes then I would have missed that
-* Obviously keep building out the recipe database!!!!
-* Think about making an API for recipes that everyone could use! wouldn't that be interesting...
-* Find out if I can keep pushing the same folder of recipes to Firestore without it duplicating recipes or if I will need a new folder for every push of a bunch of recipes (if that makes sense)
+* [ ] I need to comb over the recipes currently in the database and add in tags for "keto-friendly" or whatever else
+ * [ ] recipes usually say "keto" or "paleo" etc. in the title but if I didn't grab it from a collection of keto/paleo/etc recipes then I would have missed that
+* [ ] Obviously keep building out the recipe database!!!!
+* [ ] Think about making an API for recipes that everyone could use! wouldn't that be interesting...
+* [ ] Find out if I can keep pushing the same folder of recipes to Firestore without it duplicating recipes or if I will need a new folder for every push of a bunch of recipes (if that makes sense)
