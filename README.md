@@ -17,10 +17,12 @@ things I have encountered and tried to learn more about.
 * Navigating the Android Studio ecosystem
 * And probably a lot more that I am forgetting
 
+# what does this do?
+
 ## Things I still have to do (not exhaustive, I'm SURE other stuff will come up):
 * Add recursive deletion function to Aho-Corasick Trie when user swipes to delete (and rebuild after deletion but that's easy)
 * Build in current ingredient seleciton functionality for tags (i only have it for ingredients right now)
-* Also build in the exclusion feature which is not implemented yet on either ingredients OR tags
+  * Also build in the exclusion feature which is not implemented yet on either ingredients OR tags
 * fix the dialog recyclerview so that items appear centered and longer words don't get linefed
 * when main RV is empty put something there so it doesn't look like a barren wasteland
   * also put in some sort of loading message showing that the asynchronous task is working but not completed
