@@ -36,4 +36,5 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
  * [ ] recipes usually say "keto" or "paleo" etc. in the title but if I didn't grab it from a collection of keto/paleo/etc recipes then I would have missed that
 * [ ] Obviously keep building out the recipe database!!!!
 * [ ] Think about making an API for recipes that everyone could use! wouldn't that be interesting...
-* [ ] Find out if I can keep pushing the same folder of recipes to Firestore without it duplicating recipes or if I will need a new folder for every push of a bunch of recipes (if that makes sense)
+* [x] Find out if I can keep pushing the same folder of recipes to Firestore without it duplicating recipes or if I will need a new folder for every push of a bunch of recipes (if that makes sense)
+ * [ ] I can't just run my Node.js script over again bc it will write duplicates but maybe I can only write to the DB when there isn't an existing recipe by this name...
