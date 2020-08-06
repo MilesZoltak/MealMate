@@ -9,10 +9,10 @@ things I have encountered and tried to learn more about.
 P.S.  This is probably gonna look very stream-of-consciousnessy but that's just how I roll.  Hopefully this document sorta conveys my personality as well as useful/interesting information.  Enjoy the little peek into my mind!
 
 # Table of Contents
-* [Video Walkthrough](#Video)
-* [How it works](#How it works:)
+* [Video Walkthrough](#Walkthrough)
+* [How it works](#How)
 
-## Video
+## Walkthrough
 <img src="https://imgur.com/gKgfgXZ.gif" title="Video Walkthrough" alt="video walkthrough"/>
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
