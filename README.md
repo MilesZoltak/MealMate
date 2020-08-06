@@ -1,5 +1,5 @@
-## MealMate
-# A multi-feature meal planning app by Miles Zoltak
+# MealMate
+## A multi-feature meal planning app by Miles Zoltak
 
 This is my first independent Android App!  The main purpose of it is to allow users to input ingredients they do or don't have, and be presented with ingredeints
 that are relevant to those search queries.  I'm learning a lot while I do this, and below you can check out a list of things I have learned to do, or at least 
@@ -12,8 +12,8 @@ P.S.  This is probably gonna look very stream-of-consciousnessy but that's just 
 <img src="https://imgur.com/gKgfgXZ.gif" title="Video Walkthrough" alt="video walkthrough"/>
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
-## How it works:
-# Search Recipes by Ingredient
+# How it works:
+## Search Recipes by Ingredient
 Imagine you are trying to figure out what to make for dinner and you want to use the items in your pantry.  With MealMate you can input ingredients you would like to use (if you can find a recipe to use them), as well as ingredients you ABSOLUTELY HAVE TO USE.  To sweeten the deal we'll also add in various tags like "dinner", "easy", "weeknight", "keto" etc. (and we can specify between "Would-Like" and "Must-Have" just like we did for ingredients.
 Aha!  These recipes look great!  Except... why would I have coconut flour (or whatever) just laying around???  Fortunately for us, we can simply *exclude* ingredients or tags we don't want to see.  That way, we can get closer to only seeing relevant recipes.
 
