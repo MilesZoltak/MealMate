@@ -12,6 +12,13 @@ P.S.  This is probably gonna look very stream-of-consciousnessy but that's just 
 <img src="https://imgur.com/gKgfgXZ.gif" title="Video Walkthrough" alt="video walkthrough"/>
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
+## How it works:
+# Search Recipes by Ingredient
+Imagine you are trying to figure out what to make for dinner and you want to use the items in your pantry.  With MealMate you can input ingredients you would like to use (if you can find a recipe to use them), as well as ingredients you ABSOLUTELY HAVE TO USE.  To sweeten the deal we'll also add in various tags like "dinner", "easy", "weeknight", "keto" etc. (and we can specify between "Would-Like" and "Must-Have" just like we did for ingredients.
+Aha!  These recipes look great!  Except... why would I have coconut flour (or whatever) just laying around???  Fortunately for us, we can simply *exclude* ingredients or tags we don't want to see.  That way, we can get closer to only seeing relevant recipes.
+
+This is the core challenge that MealMate seeks to help us with.  Using up leftovers in your fridge and pantry is not only cost-effective, but it is good for the environment!  Food waste is a huge problem in the United States and many other countries around the world.  With MealMate in your pocket, you have a tool that empowers you to be resourceful and make delicious meals for yourself using what you have in front of you!
+
 
 ## Things I have learned so far
 * Firebase and Cloud Firestore specifically, I'll have to figure out user authentification later but that shouldn't be crazy hard
@@ -25,15 +32,19 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 # Things I still have to do (not exhaustive, I'm SURE other stuff will come up):
 ## For the actual app
-* [ ] Add recursive deletion function to Aho-Corasick Trie when user swipes to delete (and rebuild after deletion but that's easy)
-* [ ] Build in current ingredient seleciton functionality for tags (i only have it for ingredients right now)
-  * [ ] Also build in the exclusion feature which is not implemented yet on either ingredients OR tags
+* [x] Add recursive deletion function to Aho-Corasick Trie when user swipes to delete (and rebuild after deletion but that's easy)
+* [x] Build in current ingredient seleciton functionality for tags (i only have it for ingredients right now)
+  * [x] Also build in the exclusion feature which is not implemented yet on either ingredients OR tags
 * [ ] fix the dialog recyclerview so that items appear centered and longer words don't get linefed
 * [ ] when main RV is empty put something there so it doesn't look like a barren wasteland
-  * [ ] also put in some sort of loading message showing that the asynchronous task is working but not completed
+  * [x] also put in some sort of loading message showing that the asynchronous task is working but not completed
+* [ ] Consider combining the ingredients dialog and tag dialog into one dialog navigated with tab layout.  makes navigation easier/faster
+* [ ] Append matched ingredients to Recipe data class for use later
+  * This may help with potentially sorting recyclerview items by best to worst match
+* [ ] Allow user to click recipe and view in new activity!
 ## For the database
-* [ ] I need to comb over the recipes currently in the database and add in tags for "keto-friendly" or whatever else
- * [ ] recipes usually say "keto" or "paleo" etc. in the title but if I didn't grab it from a collection of keto/paleo/etc recipes then I would have missed that
+* [x] I need to comb over the recipes currently in the database and add in tags for "keto-friendly" or whatever else
+ * [x] recipes usually say "keto" or "paleo" etc. in the title but if I didn't grab it from a collection of keto/paleo/etc recipes then I would have missed that
 * [ ] Obviously keep building out the recipe database!!!!
 * [ ] Think about making an API for recipes that everyone could use! wouldn't that be interesting...
 * [x] Find out if I can keep pushing the same folder of recipes to Firestore without it duplicating recipes or if I will need a new folder for every push of a bunch of recipes (if that makes sense)
