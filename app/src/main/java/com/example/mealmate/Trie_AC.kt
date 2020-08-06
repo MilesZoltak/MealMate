@@ -25,6 +25,21 @@ class Trie_AC {
         currentNode.end = true
     }
 
+    fun remove(word: String) {
+        removeRec(root, word.decapitalize())
+    }
+
+    private fun removeRec(curr: Node, word: String) : Boolean {
+        if (word.length == 0) {
+            curr.end = false
+        } else {
+            if (removeRec(curr.childNodes[word[0]]!!, word.subSequence(1, word.length).toString())) {
+                curr.childNodes.remove(word[0])
+            }
+        }
+        return curr.childNodes.isEmpty()
+    }
+
     //you pass in any given node and it will return the parent of that node
     fun getParent(curr: Node) : Node? {
         val word = curr.word
