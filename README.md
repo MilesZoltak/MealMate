@@ -9,7 +9,7 @@ things I have encountered and tried to learn more about.
 P.S.  This is probably gonna look very stream-of-consciousnessy but that's just how I roll.  Hopefully this document sorta conveys my personality as well as useful/interesting information.  Enjoy the little peek into my mind!
 
 ## Video Walkthrough
-<img src="https://imgur.com/8LXskpB.gif" title="Video Walkthrough" alt="video walkthrough"/>
+<img src="https://imgur.com/gKgfgXZ.gif" title="Video Walkthrough" alt="video walkthrough"/>
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 
