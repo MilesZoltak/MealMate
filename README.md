@@ -10,13 +10,13 @@ P.S.  This is probably gonna look very stream-of-consciousnessy but that's just 
 
 # Table of Contents
 * [Video Walkthrough](#Walkthrough)
-* [How it works](#How it works:)
+* [How it works](#Functionalities)
 
 ## Walkthrough
 <img src="https://imgur.com/gKgfgXZ.gif" title="Video Walkthrough" alt="video walkthrough"/>
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
-# How it works:
+# Functionalities
 ## Search Recipes by Ingredient
 **Imagine:** You are trying to figure out what to make for dinner and you want to use the items in your pantry.  With MealMate you can input ingredients you would like to use (if you can find a recipe to use them), as well as ingredients you ABSOLUTELY HAVE TO USE.  To sweeten the deal we'll also add in various tags like "dinner", "easy", "weeknight", "keto" etc. (and we can specify between "Would-Like" and "Must-Have" just like we did for ingredients.
 
