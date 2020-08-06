@@ -11,6 +11,8 @@ P.S.  This is probably gonna look very stream-of-consciousnessy but that's just 
 # Table of Contents
 * [Video Walkthrough](#Walkthrough)
 * [How it works](#Functionalities)
+* [Things I've Learned So Far (prospective employers I'm looking at you!)](#Skillz)
+* [Things I Still Gotta Work On](#Todo)
 
 ## Walkthrough
 <img src="https://imgur.com/gKgfgXZ.gif" title="Video Walkthrough" alt="video walkthrough"/>
@@ -40,7 +42,7 @@ Who doesn't love saving money?  The way we shop for food can make or break the b
 **Imagine:**  You usually go to the grocery store down the street and the prices are fine.  But you're across town today and need some stuff at the store so you stop by.  "WHAT??? I've been getting ripped off at the store for 40 long years?!"  Yeah, we've all been there.  But with MealMate we don't have to be.  MealMate can check prices for your grocery list or whatever items at several local grocery stores so that you are going to the store that's going to save you the most money.
 
 
-# Things I have learned so far
+# Skillz
 * Firebase and Cloud Firestore specifically, I'll have to figure out user authentification later but that shouldn't be crazy hard
 * Implementing Aho-Corasick Tries, this was quite the trip ~~and I'm still in it but I think I've got the hang of it now~~ I DID IT!
 * Writing Python scripts to do webscraping, and then saving those results into JSON files
@@ -50,7 +52,7 @@ Who doesn't love saving money?  The way we shop for food can make or break the b
 * Navigating the Android Studio ecosystem
 * And probably a lot more that I am forgetting
 
-# Things I still have to do (not exhaustive, I'm SURE other stuff will come up):
+# Todo
 ## For the actual app
 * [x] Add recursive deletion function to Aho-Corasick Trie when user swipes to delete (and rebuild after deletion but that's easy)
 * [x] Build in current ingredient seleciton functionality for tags (i only have it for ingredients right now)
