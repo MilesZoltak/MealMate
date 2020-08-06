@@ -8,13 +8,17 @@ things I have encountered and tried to learn more about.
 
 P.S.  This is probably gonna look very stream-of-consciousnessy but that's just how I roll.  Hopefully this document sorta conveys my personality as well as useful/interesting information.  Enjoy the little peek into my mind!
 
+# Table of Contents
+* [Video Walkthrough](##Video Walkthrough)
+* [How it works](#How it works:)
+
 ## Video Walkthrough
 <img src="https://imgur.com/gKgfgXZ.gif" title="Video Walkthrough" alt="video walkthrough"/>
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 # How it works:
 ## Search Recipes by Ingredient
-Imagine you are trying to figure out what to make for dinner and you want to use the items in your pantry.  With MealMate you can input ingredients you would like to use (if you can find a recipe to use them), as well as ingredients you ABSOLUTELY HAVE TO USE.  To sweeten the deal we'll also add in various tags like "dinner", "easy", "weeknight", "keto" etc. (and we can specify between "Would-Like" and "Must-Have" just like we did for ingredients.
+**Imagine:** You are trying to figure out what to make for dinner and you want to use the items in your pantry.  With MealMate you can input ingredients you would like to use (if you can find a recipe to use them), as well as ingredients you ABSOLUTELY HAVE TO USE.  To sweeten the deal we'll also add in various tags like "dinner", "easy", "weeknight", "keto" etc. (and we can specify between "Would-Like" and "Must-Have" just like we did for ingredients.
 
 Aha!  These recipes look great!  Except... why would I have coconut flour (or whatever) just laying around???  Fortunately for us, we can simply *exclude* ingredients or tags we don't want to see.  That way, we can get closer to only seeing relevant recipes.
 
@@ -31,9 +35,9 @@ Want to consolidate all of those ingredients into a shopping list?  Leave it to 
 ## Optimize Your Meal Planning
 Who doesn't love saving money?  The way we shop for food can make or break the bank.  MealMate helps us shop in ways that maximize your savings and minimize stress and confusion about grocery shopping.
 
-Imagine:  You're at the store and you're passing by the produce.  "$2.00 per pound of Daikon Radishes?!?!" you say, "That's such a great deal!"  Or is it?? I don't know, probably nobody knows.  But MealMate does.  By checking average prices for various goods like meats, produce, dairy, and whatever other goods have fluctuating prices, MealMate can tell you when foods are at the usual price, or if they are more or less pricey than usual.  Now we can take advantage of that deal on Sockeye Salmon and know we are getting the most bang for our buck.
+**Imagine:**  You're at the store and you're passing by the produce.  "$2.00 per pound of Daikon Radishes?!?!" you say, "That's such a great deal!"  Or is it?? I don't know, probably nobody knows.  But MealMate does.  By checking average prices for various goods like meats, produce, dairy, and whatever other goods have fluctuating prices, MealMate can tell you when foods are at the usual price, or if they are more or less pricey than usual.  Now we can take advantage of that deal on Sockeye Salmon and know we are getting the most bang for our buck.
 
-Imagine:  You usually go to the grocery store down the street and the prices are fine.  But you're across town today and need some stuff at the store so you stop by.  "WHAT??? I've been getting ripped off at the store for 40 long years?!"  Yeah, we've all been there.  But with MealMate we don't have to be.  MealMate can check prices for your grocery list or whatever items at several local grocery stores so that you are going to the store that's going to save you the most money.
+**Imagine:**  You usually go to the grocery store down the street and the prices are fine.  But you're across town today and need some stuff at the store so you stop by.  "WHAT??? I've been getting ripped off at the store for 40 long years?!"  Yeah, we've all been there.  But with MealMate we don't have to be.  MealMate can check prices for your grocery list or whatever items at several local grocery stores so that you are going to the store that's going to save you the most money.
 
 
 # Things I have learned so far
