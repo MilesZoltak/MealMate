@@ -10,7 +10,7 @@ P.S.  This is probably gonna look very stream-of-consciousnessy but that's just 
 
 # Table of Contents
 * [Video Walkthrough](#Walkthrough)
-* [How it works](#How)
+* [How it works](#How it works:)
 
 ## Walkthrough
 <img src="https://imgur.com/gKgfgXZ.gif" title="Video Walkthrough" alt="video walkthrough"/>
