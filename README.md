@@ -12,7 +12,7 @@ P.S.  This is probably gonna look very stream-of-consciousnessy but that's just 
 * [Video Walkthrough](#Video)
 * [How it works](#How it works:)
 
-## Video Walkthrough
+## Video
 <img src="https://imgur.com/gKgfgXZ.gif" title="Video Walkthrough" alt="video walkthrough"/>
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
